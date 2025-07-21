@@ -217,8 +217,3 @@ Use accent color for KPIs and visual highlights. Keep layout clean with plenty o
 * Test filters across visuals to confirm sync.
 
 ```
-
----
-
-Let me know if you'd like this exported as a **`.md` file**, styled HTML preview, or turned into a downloadable PDF with layout images!
-```
