@@ -4,14 +4,14 @@
 
 ## 📁 Table of Contents
 
-1. [🔧 Project Overview](#project-overview)
-2. [📊 Dashboard Structure](#dashboard-structure)
-3. [🔁 Data Modeling & Cardinality](#data-modeling--cardinality)
-4. [🧮 DAX Measures & Calculated Tables](#dax-measures--calculated-tables)
-5. [📈 Visualizations Guide](#visualizations-guide)
-6. [🎛 Recommended Filters](#recommended-filters)
-7. [🎨 Design & Color Palette](#design--color-palette)
-8. [📌 Final Layout Summary](#final-layout-summary)
+1. [🔧 Project Overview](#-project-overview)
+2. [📊 Dashboard Structure](#-dashboard-structure)
+3. [🔁 Data Modeling & Cardinality](#-data-modeling--cardinality)
+4. [🧮 DAX Measures & Calculated Tables](#-dax-measures--calculated-tables)
+5. [📈 Visualizations Guide](#-visualizations-guide)
+6. [🎛 Recommended Filters](#-recommended-filters)
+7. [🎨 Design & Color Palette](#-design--color-palette)
+8. [📌 Final Layout Summary](#-final-layout-summary)
 
 ---
 
@@ -19,7 +19,7 @@
 
 This Power BI dashboard represents **sales data for January 2022**, stored in the `Jan_2022` table. It offers performance insights through KPIs, visualizations, and calculated metrics that help users understand sales trends, profitability, and product performance.
 
-🔗 1.png
+🔗 `1.png`
 
 ---
 
@@ -42,14 +42,14 @@ The dashboard is broken down into three key sections:
 
 ### 📂 Source Table
 
-* `Jan_2022` — Contains fields like `Date`, `Order ID`, `Product Name`, `Cost`, `Sale`, and `Quantity`.
+- `Jan_2022` — Contains fields like `Date`, `Order ID`, `Product Name`, `Cost`, `Sale`, and `Quantity`.
 
 ### 🔄 Cardinality
 
 Currently, a **single table** is used, so no relationships are necessary. If you expand this model:
 
-* Link a **Products** table (`Product ID`) → `Jan_2022[Product ID]`
-* Link a **Calendar** table → `Jan_2022[Date]`
+- Link a **Products** table (`Product ID`) → `Jan_2022[Product ID]`
+- Link a **Calendar** table → `Jan_2022[Date]`
 
 Use **"Many-to-One"** relationships with **single direction filtering**.
 
@@ -59,7 +59,7 @@ Use **"Many-to-One"** relationships with **single direction filtering**.
 
 ## 🧮 DAX Measures & Calculated Tables
 
-### ✅ **DAX Measures** used in the dashboard:
+### ✅ DAX Measures
 
 ```dax
 Total Sale = SUM(Jan_2022[Sale])
@@ -71,11 +71,11 @@ Total Quantity = SUM(Jan_2022[Quantity])
 Profit = [Total Sale] - [Total Cost]
 
 Profit Margin % = DIVIDE([Profit], [Total Sale], 0)
-```
+````
 
 ---
 
-### 🧮 **Calculated Columns / Tables**
+### 🧮 Calculated Columns / Tables
 
 #### 🔹 Day Column:
 
@@ -114,7 +114,7 @@ Each visual adds specific value to the dashboard:
 
 ---
 
-### 📉 1. **Line Chart – Sales Trend**
+### 📉 1. Line Chart – Sales Trend
 
 * **X-Axis**: `Day`
 * **Y-Axis**: `Total Sale`
@@ -124,7 +124,7 @@ Each visual adds specific value to the dashboard:
 
 ---
 
-### 📊 2. **Bar Chart – Top Products by Sale**
+### 📊 2. Bar Chart – Top Products by Sale
 
 * **Axis**: `Product Name`
 * **Values**: `Total Sale`
@@ -133,7 +133,7 @@ Each visual adds specific value to the dashboard:
 
 ---
 
-### 🧁 3. **Donut Chart – Product Share by Sale**
+### 🧁 3. Donut Chart – Product Share by Sale
 
 * **Values**: `Total Sale`
 * **Legend**: `Product Name`
@@ -143,7 +143,7 @@ Each visual adds specific value to the dashboard:
 
 ---
 
-### 📉 4. **Waterfall Chart – Cost to Revenue Breakdown**
+### 📉 4. Waterfall Chart – Cost to Revenue Breakdown
 
 * **Category**: `Step` (from WaterfallSteps table)
 * **Values**: `Waterfall Value` measure (based on Cost, Profit, Sale)
@@ -151,7 +151,7 @@ Each visual adds specific value to the dashboard:
 
 ---
 
-### 🎯 5. **Gauge Chart – Total Sales vs. Target**
+### 🎯 5. Gauge Chart – Total Sales vs. Target
 
 * **Value**: `Total Sale`
 * **Max**: Manual target (e.g., 10,000)
@@ -159,7 +159,7 @@ Each visual adds specific value to the dashboard:
 
 ---
 
-### 🧊 6. **Heatmap or Matrix – Optional Detail View**
+### 🧊 6. Heatmap or Matrix – Optional Detail View
 
 * **Rows**: `Product Name`
 * **Columns**: `Order ID`
@@ -183,7 +183,7 @@ Each visual adds specific value to the dashboard:
 
 ## 🎨 Design & Color Palette
 
-### 💡 Chosen Theme: **Ocean Breeze**
+### 💡 Chosen Theme: Ocean Breeze
 
 | Element        | Color      | Hex Code  |
 | -------------- | ---------- | --------- |
@@ -224,6 +224,9 @@ Use accent color for KPIs and visual highlights. Keep layout clean with plenty o
 * Maintain naming consistency in DAX measures.
 * Test filters across visuals to confirm sync.
 
+```
+
 ---
 
-Would you like me to export this README as a downloadable `.md` file or styled `.pdf`?
+Let me know if you'd like this exported as a **`.md` file**, styled HTML preview, or turned into a downloadable PDF with layout images!
+```
