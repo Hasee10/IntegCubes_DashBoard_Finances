@@ -19,8 +19,6 @@
 
 This Power BI dashboard represents **sales data for January 2022**, stored in the `Jan_2022` table. It offers performance insights through KPIs, visualizations, and calculated metrics that help users understand sales trends, profitability, and product performance.
 
-![Alt Text](1.png)
-
 ---
 
 ## 📊 Dashboard Structure
@@ -120,8 +118,6 @@ Each visual adds specific value to the dashboard:
 * **Y-Axis**: `Total Sale`
 * Shows how revenue changes daily over the month.
 
-🔗 *(Insert gif of line chart setup)*
-
 ---
 
 ### 📊 2. Bar Chart – Top Products by Sale
@@ -138,8 +134,6 @@ Each visual adds specific value to the dashboard:
 * **Values**: `Total Sale`
 * **Legend**: `Product Name`
 * Best for proportion views of total sales.
-
-🔗 *(Insert image placeholder for donut chart)*
 
 ---
 
@@ -177,7 +171,7 @@ Each visual adds specific value to the dashboard:
 | **Profit Category** | `Profit Category` | List     | Show only profitable/loss items |
 | **Quantity Range**  | `Quantity`        | Slider   | Focus on high/low volume sales  |
 
-🔗 *(Insert slicer layout screenshot)*
+![Alt Text](2.png)
 
 ---
 
@@ -193,7 +187,7 @@ Each visual adds specific value to the dashboard:
 
 Use accent color for KPIs and visual highlights. Keep layout clean with plenty of white space.
 
-🔗 *(Insert theme preview image)*
+![Alt Text](3.png)
 
 ---
 
@@ -213,8 +207,6 @@ Use accent color for KPIs and visual highlights. Keep layout clean with plenty o
 - Gauge Chart
 - Filters: Product Name | Month | Profit Category | Quantity
 ```
-
-🔗 *(Insert full dashboard animation or navigation GIF)*
 
 ---
 
