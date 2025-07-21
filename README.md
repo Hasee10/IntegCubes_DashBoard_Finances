@@ -19,7 +19,8 @@
 
 This Power BI dashboard represents **sales data for January 2022**, stored in the `Jan_2022` table. It offers performance insights through KPIs, visualizations, and calculated metrics that help users understand sales trends, profitability, and product performance.
 
-🔗 `1.png`
+🔗 ![Alt Text](1.png)
+
 
 ---
 
