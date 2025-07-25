@@ -4,7 +4,7 @@
 
 ## 📁 Table of Contents
 
-. [🔧 Project Overview](#-project-overview)
+1. [🔧 Project Overview](#-project-overview)
 2. [📊 Dashboard Structure](#-dashboard-structure)
 3. [🔁 Data Modeling & Cardinality](#-data-modeling--cardinality)
 4. [🧮 DAX Measures & Calculated Tables](#-dax-measures--calculated-tables)
