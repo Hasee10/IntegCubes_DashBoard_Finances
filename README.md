@@ -2,7 +2,7 @@
 
 ---
 
-## 📁 Table of Contents
+## 📁 Table of Content
 
 1. [🔧 Project Overview](#-project-overview)
 2. [📊 Dashboard Structure](#-dashboard-structure)
